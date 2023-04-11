@@ -12,8 +12,9 @@ public class SecondSelenideTest {
     void findSolutionsTest (){
         open("https://github.com");
         $(Selectors.byTagAndText("button", "Solutions")).hover();
-        $(Selectors.byTagAndText("a", "Enterprize")).hover();
+        $(Selectors.byTagAndText("a", "Enterprise")).click();
         $(".application-main ").shouldHave(Condition.text("Build like the best"));
+        Configuration.holdBrowserOpen = true;
 
     }
 
