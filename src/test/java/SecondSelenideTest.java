@@ -18,7 +18,7 @@ public class SecondSelenideTest {
     }
 
     @Test
-    void moveActionsTestFall (){
+    void moveActionsTestFall(){
         open("https://the-internet.herokuapp.com/drag_and_drop");
         SelenideElement columnA = $("#column-a");
         SelenideElement columnB = $("#column-b");
